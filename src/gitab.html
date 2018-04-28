@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gitab</title>
+</head>
+<body>
+<div id="app">
+    <br>
+    <div class="col-md-12">
+        <button class="btn btn-default pull-right" data-toggle="modal" data-target="#addNewRepo">
+            <i class="glyphicon glyphicon-plus"></i>
+            Add New Repo
+        </button>
+        <div class="clearfix"></div>
+        <h1 class="text-center">Gitab</h1>
+        <h4 class="text-center">Follow your favourite Repositories in every new tab</h4>
+    </div>
+    <div class="clearfix"></div>
+    <hr>
+    <div class="repositories-container">
+
+    </div>
+</div>
+
+<!-- Modals -->
+<div id="modals">
+    <!-- Add new repository -->
+    <div class="modal fade" id="addNewRepo" tabindex="-1" role="dialog" aria-labelledby="addNewRepoLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="addNewRepoLabel">Add New Repository</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="the-basics">
+                        <input class="form-control" id="repo" type="text" placeholder="ex: laravel/framework">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submit-new-repo">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End add new repository -->
+</div>
+<!-- End Modals -->
+<script src="./main.bundle.js"></script>
+</body>
+</html>

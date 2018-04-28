@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Gitab",
+  "short_name": "Gitab",
+  "description": "Replace the new tab with a list of repositories on github belonging to any project that you want to follow.",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "*://*.github.com/*"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "gitab.html"
+  },
+  "homepage_url": "http://ahmedash95.github.io/",
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_action": {
+    "default_title": "Gitab"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

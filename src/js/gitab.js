@@ -23,6 +23,7 @@ export default function Gitab() {
 
 
 	return {
+		getAllRepos:repository.all,
 		addNewRepo:repository.add,
 		draw: draw
 	}

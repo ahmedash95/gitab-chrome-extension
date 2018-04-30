@@ -7,9 +7,6 @@ export default function Gitab() {
 	let Storage = new HubStorage();
 	let repository = new RepositoryManager(Storage);
 
-	let currentRepos = repository.all();
-	console.warn(`${currentRepos.length} Repositories: ${currentRepos.join(', ')}`);
-
 	/*
 	    Draw panel foreach repository
 	 */
@@ -25,6 +22,8 @@ export default function Gitab() {
 	return {
 		getAllRepos:repository.all,
 		addNewRepo:repository.add,
+        getRepositroy:repository.get,
+        updateRepo: repository.update,
 		draw: draw
 	}
 }

@@ -1,10 +1,17 @@
-export default function RepositoryPanel(name) {
+export default function RepositoryPanel(repo) {
 
     let render = function () {
         return `
         <div class="col-md-4">
             <div class="panel panel-default">
-                <div class="panel-heading">${name}</div>
+                <div class="panel-heading">
+                    ${repo.getName()}
+                    <div class="col-md-3 pull-right text-right row">
+                        <button class="btn btn-default btn-xs edit-repo" data-repo="${repo.getName()}">
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="panel-body list-group">
                     <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>

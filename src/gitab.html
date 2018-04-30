@@ -40,6 +40,28 @@
                     <div id="the-basics">
                         <input class="form-control" id="repo" type="text" placeholder="ex: laravel/framework">
                     </div>
+                    <div>
+                        <br>
+                        <div class="col-md-4">
+                            <label for="issues">
+                                <input class="to-follow" type="checkbox" checked name="follow" id="issues" value="issues">
+                                Issues
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="pr">
+                                <input class="to-follow" type="checkbox" checked name="follow" id="pr" value="pull-requests">
+                                Pull Requests
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="mpr">
+                                <input class="to-follow" type="checkbox" checked name="follow" id="mpr" value="merged-pull-requests">
+                                Merged Requests
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -49,6 +71,50 @@
         </div>
     </div>
     <!-- End add new repository -->
+    <!-- Edit repository -->
+    <div class="modal fade" id="editRepo" tabindex="-1" role="dialog" aria-labelledby="editRepoLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="editRepoLabel">Edit Repository</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="edit-the-basics">
+                        <input class="form-control" id="edit-repo-name" disabled type="text" placeholder="ex: laravel/framework">
+                    </div>
+                    <div>
+                        <br>
+                        <div class="col-md-4">
+                            <label for="edit-issues">
+                                <input class="edit-to-follow" type="checkbox" id="edit-issues" value="issues">
+                                Issues
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="edit-pr">
+                                <input class="edit-to-follow" type="checkbox" id="edit-pr" value="pull-requests">
+                                Pull Requests
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="edit-mpr">
+                                <input class="edit-to-follow" type="checkbox" id="edit-mpr" value="merged-pull-requests">
+                                Merged Requests
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submit-edit-repo">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End edit repository -->
 </div>
 <!-- End Modals -->
 <script src="./main.js"></script>

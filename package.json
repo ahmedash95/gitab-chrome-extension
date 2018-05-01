@@ -21,6 +21,7 @@
     "webpack": "^4.6.0"
   },
   "devDependencies": {
+    "hoek": "^4.2.1",
     "autoprefixer": "^8.4.1",
     "css-loader": "^0.28.11",
     "exports-loader": "^0.7.0",

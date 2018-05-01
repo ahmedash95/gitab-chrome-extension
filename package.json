@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "webpack",
-    "watch" : "webpack --watch"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Ahmed Ashraf<ahmed29329@gmail.com>",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "webpack": "^4.6.0"
   },
   "devDependencies": {
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.4.1",
     "css-loader": "^0.28.11",
     "exports-loader": "^0.7.0",
     "html-webpack-plugin": "^3.2.0",
@@ -29,6 +29,6 @@
     "postcss-loader": "^2.1.4",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
-    "webpack-cli": "^2.0.15"
+    "webpack-cli": "^2.1.2"
   }
 }

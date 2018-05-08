@@ -3,6 +3,7 @@ import 'jquery';
 import 'bootstrap';
 import './scss/app.scss';
 // Locale Modules
+import "./js/background-task";
 import Gitab from './js/gitab';
 import Repository from './js/entities/repository';
 

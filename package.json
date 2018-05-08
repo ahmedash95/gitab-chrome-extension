@@ -16,6 +16,9 @@
     "file-loader": "^1.1.11",
     "inject-html-webpack-plugin": "0.0.37",
     "jquery": "^3.3.1",
+    "moment": "^2.22.1",
+    "momentum": "^4.0.0",
+    "notifyjs": "^3.0.0",
     "popper.js": "^1.14.3",
     "url-loader": "^1.0.1",
     "webpack": "^4.6.0"

@@ -1,11 +1,11 @@
-import HubStorage from './storage.js'
+import StorageService from './services/storage'
 import RepositoryManager from './repository-manager.js'
 import RepositoryPanel from './templates/repository-panel'
 
 export default function Gitab() {
 
-	let Storage = new HubStorage();
-	let repository = new RepositoryManager(Storage);
+	let Storage = (new StorageService).get()
+    let repository = new RepositoryManager(Storage);
 
 	/*
 	    Draw panel foreach repository

@@ -7,7 +7,6 @@ module.exports = {
   	mode: 'development',
   	entry: {
   		main: './src/index.js',
-		background: './src/background.js'
     },
   	output: {
     	path: path.resolve(__dirname, 'dist'),

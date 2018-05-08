@@ -1,6 +1,18 @@
 export default function RepositoryPanel(repo) {
 
+    let issues = repo.getIssues();
+
     let render = function () {
+        let htmlIssues = "";
+        for(let i = 0; i < issues.length; i++) {
+            let issue = issues[i];
+            htmlIssues += `
+                <li class="list-group-item">
+                    <a href="${issue.getUrl()}">${issue.getTitle()}</a>
+                </li>
+            `
+        }
+
         return `
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -13,11 +25,7 @@ export default function RepositoryPanel(repo) {
                     </div>
                 </div>
                 <div class="panel-body list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    ${htmlIssues}    
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@ let run = function () {
 
 let storageService = (new Storage).get();
 
-let refreshDuration = '1';
+let refreshDuration = '10';
 let lastTimeRun = storageService.get('last_time_run');
 
 let then = moment(lastTimeRun, 'YYYY-MM-DD HH:mm:ss');
